@@ -1,6 +1,6 @@
 package br.com.tarefaEstruturaDeDados.model;
 
-public class Aluno implements INomeavel {
+public class Aluno {
 	
 	private String nome;
 	private Integer distancia;

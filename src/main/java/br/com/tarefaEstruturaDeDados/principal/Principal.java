@@ -5,7 +5,7 @@ import java.util.Scanner;
 import br.com.tarefaEstruturaDeDados.estruturas.IntNoSimples;
 import br.com.tarefaEstruturaDeDados.estruturas.ListaEncadeada;
 import br.com.tarefaEstruturaDeDados.model.Aluno;
-import br.com.tarefaEstruturaDeDados.model.Motorista;
+
 
 public class Principal {
 	
@@ -24,7 +24,7 @@ public class Principal {
 			System.out.println("  3-Remover Presença");
 			System.out.println("  4-Calcular Rota de Ida");
 			System.out.println("  5-Calcular Volta");
-			System.out.println("  6-Exibir Alunos e Motorista");
+			System.out.println("  6-Exibir Alunos");
 			System.out.println("  0-Sair");
 			opcao = ler.nextInt();
 			ler.nextLine();
@@ -92,16 +92,21 @@ public class Principal {
 			case 6:
 				System.out.println("-------------------------------------------------------------------------------------");
 				System.out.println("----------------------------------Lista de Alunos------------------------------------");
+				System.out.println("-------------------------------------------------------------------------------------");
 				listaAluno.exibeLista();
 				System.out.println("-------------------------------------------------------------------------------------");
 				System.out.println("----------------------------------Lista de Presenca------------------------------------");
+				System.out.println("-------------------------------------------------------------------------------------");
 				listaPresenca.exibeLista();
 				System.out.println("-------------------------------------------------------------------------------------");
 				System.out.println("----------------------------Lista de ordem para pegar alunos--------------------------");
+				System.out.println("-------------------------------------------------------------------------------------");
 				listaAluno.exibeListaParaArvore();
 				System.out.println("-------------------------------------------------------------------------------------");
 				System.out.println("----------------------------Lista de ordem para Voltar---------------------------------");
+				System.out.println("-------------------------------------------------------------------------------------");
 				listaAluno.exibeListaParaVolta(listaAluno.ContarNos());
+				System.out.println("-------------------------------------------------------------------------------------");
 				System.out.println("-------------------------------------------------------------------------------------");
 				System.out.println("-------------------------------------------------------------------------------------");
 				break;

@@ -4,7 +4,8 @@ package br.com.tarefaEstruturaDeDados.estruturas;
 
 
 
-import br.com.tarefaEstruturaDeDados.model.INomeavel;
+import br.com.tarefaEstruturaDeDados.model.Aluno;
+
 
 public class ListaEncadeada {
 	IntNoSimples primeiro, ultimo;
@@ -72,7 +73,7 @@ public class ListaEncadeada {
 		}
 	}
 
-	public INomeavel buscaNo(Object buscaValor) {
+	public Aluno buscaNo(Object buscaValor) {
 
 		if (!(buscaValor instanceof String)) {
 			return null;
@@ -83,12 +84,12 @@ public class ListaEncadeada {
 		IntNoSimples temp_no = primeiro;
 		while (temp_no != null) {
 
-			if (temp_no.valor instanceof INomeavel) {
-				INomeavel nomeavel = (INomeavel) temp_no.valor;
+			if (temp_no.valor instanceof Aluno) {
+				Aluno aluno = (Aluno) temp_no.valor;
 
-				if (nomeavel.getNome().equals(nomeBusca)) {				
-						System.out.println(nomeavel.getNome() + " encontrado na posição " + i);					
-					return nomeavel;
+				if (aluno.getNome().equals(nomeBusca)) {				
+						System.out.println(aluno.getNome() + "foi confirmado que vai hoje");					
+					return aluno;
 				}
 			}
 			i++;
@@ -122,7 +123,7 @@ public class ListaEncadeada {
 		IntNoSimples temp_no = primeiro;
 		int i = 0;
 		while (temp_no != null) {
-			System.out.println(temp_no.valor + " posição " + i);
+			System.out.println(temp_no.valor);
 			temp_no = temp_no.prox;
 			i++;
 		}

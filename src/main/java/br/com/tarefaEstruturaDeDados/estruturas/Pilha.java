@@ -1,19 +1,20 @@
 package br.com.tarefaEstruturaDeDados.estruturas;
 
-import javax.swing.JOptionPane;
 
-import br.com.tarefaEstruturaDeDados.model.INomeavel;
+
+import br.com.tarefaEstruturaDeDados.model.Aluno;
+
 
 public class Pilha {
 	//Declarando os atributos da classe
     int topo;
     int tamanho;
-    INomeavel vetor[];
+    Aluno vetor[];
     
     Pilha(int tam){
         topo = -1; //Marca que a pilha está vazia
         tamanho = tam;
-        vetor = new INomeavel[tam];
+        vetor = new Aluno[tam];
     }
     public boolean vazia(){
         if (topo == -1)
@@ -27,7 +28,7 @@ public class Pilha {
         else
             return false;
     }
-    public void empilhar(INomeavel elem){
+    public void empilhar(Aluno elem){
         if (cheia() == false){
             topo++;
             vetor[topo]= elem;
@@ -49,7 +50,7 @@ public class Pilha {
     }
     public void ExibePilha(){
         if(vazia() == true){
-        	System.out.println("Essa é a lista");
+        	System.out.println();
 
         }
         else{

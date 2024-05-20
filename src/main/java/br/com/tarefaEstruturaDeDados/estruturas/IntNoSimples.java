@@ -1,11 +1,12 @@
 package br.com.tarefaEstruturaDeDados.estruturas;
 
-import br.com.tarefaEstruturaDeDados.model.INomeavel;
+import br.com.tarefaEstruturaDeDados.model.Aluno;
+
 
 public class IntNoSimples {
-    INomeavel valor;
+    Aluno valor;
     IntNoSimples prox;
-    public IntNoSimples(INomeavel ValorNo){
+    public IntNoSimples(Aluno ValorNo){
         valor = ValorNo;
         prox = null;
     }

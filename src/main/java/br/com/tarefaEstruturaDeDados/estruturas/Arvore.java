@@ -1,6 +1,7 @@
 package br.com.tarefaEstruturaDeDados.estruturas;
 
-import br.com.tarefaEstruturaDeDados.model.INomeavel;
+import br.com.tarefaEstruturaDeDados.model.Aluno;
+
 
 public class Arvore {
 	 Node root = null;
@@ -12,7 +13,7 @@ public class Arvore {
 	        else
 	            return false;
 	    }
-	    void insert(int info, Node place,INomeavel aluno) {             // algoritmo para inserir uma informação
+	    void insert(int info, Node place,Aluno aluno) {             // algoritmo para inserir uma informação
 	        if (place == null) {                        // Se o local está vazio, então a árvore está vazia
 	            root = new Node(info,aluno);                  // e o root vai receber o novo nó
 //	            System.out.print(aluno.toString());           // Imprime a informação inserida
